@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
 @media(max-width: 700px){
-   *{
+   
+   
+    *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +17,10 @@
         overflow-x: hidden;
     }
     
+    p{
+        font-family: 'Thasadith', sans-serif;
+    }
+
     .container-col img{
     
         margin-left: px;
@@ -30,9 +38,11 @@
    }
 
     .navbar{
+        font-family: 'Poiret One', cursive;
         position: fixed;
         top: 0;
-        padding-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         width: 100%;
         left: 0;
         display: flex;
@@ -42,10 +52,12 @@
 
     .navbar img{
         height: 50px;
+        width: auto;
        padding-left: 10%;
     
     }
        .text-box h1{
+        font-family: 'Poiret One', cursive;
         font-size: 20px;
 
     }
@@ -65,10 +77,16 @@
   
 }
 
+.nav-links a.active{
+    padding-bottom: 10px;
+    border-bottom: 2px  solid white;
+    margin-right: 40%;
+}
+
 
 .hero video{
     width:100%;
-    height: 60vh;
+    height: 50vh;
     object-fit: cover;
     position: relative;
     z-index: -1;
@@ -76,10 +94,11 @@
 
 .text-box{
     padding: 10px;
+    z-index: -1;
 }
 
 .text-box .main-title{
-
+    
     font-size: 2.8em;
     font-weight: bold;
     color: #f44336;
@@ -94,6 +113,7 @@
 }
 
 .hero-btn {
+    font-family: 'Thasadith', sans-serif;
     color:  white;
     display: inline-block;
     text-decoration: none;
@@ -151,6 +171,7 @@
 /* service */
 
 .services-H{
+    font-family: 'Poiret One', cursive;
     font-size: 2em;
     text-align: center;
     padding-top: 40px;
@@ -182,6 +203,7 @@
 }
 
 .service-col h3{
+    font-family: 'Poiret One', cursive;
     text-align: start;
     color: #f44336f0;;
     font-size: 1.5em;
@@ -198,21 +220,43 @@
 .works-H{
     font-size: 2em;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom:10px ;
+    padding-top: 20%;
+    padding-bottom: 20px;
     color: rgba(0, 0, 0, 0.7);
+   
 }
 
+.work{
+    margin-bottom: 50px;
+}
 
 .work-col{
-    border: 1px solid #f44336f0;
-    padding-left: 20px;
-    padding-right:20px ;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    display: flex;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 10px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: start;
+    padding-top: 10px;
 }
+
+
+.image img{
+    height: 100px;
+    width: 100px;
+    padding: 2px;
+    border-radius: 60px;
+    background-color:#f44336f0;
+    object-fit: cover
+}
+
+.work-col h3{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.6em;
+    padding-left: 20px;
+}
+
 
 }

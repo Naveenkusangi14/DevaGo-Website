@@ -19,11 +19,11 @@
         <div class="nav-links" style="right: -500px;" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li> <a href="#" onclick="hideMenu()">HOME</a></li>
-                <li> <a href="#">ABOUT</a></li>
-                <li> <a href="#services" onclick="hideMenu()">SERVICE</a></li>
-                <li> <a href="#">BLOG</a></li>
-                <li> <a href="#">CONTACT</a></li>
+                <li class="menu-item"> <a href="/" onclick="hideMenu()" class="active">HOME</a></li>
+                <li class="menu-item"> <a href="#services" onclick="hideMenu()">SERVICES</a></li>
+                <li class="menu-item"> <a href="/pages/workflow.html">WORK FLOW</a></li>
+                <li class="menu-item"> <a href="#">PRICING</a></li>
+                <li class="menu-item"> <a href="#">CONTACT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" style="color: red;"  onclick="ShowMenu()" ></i>
@@ -69,28 +69,7 @@
 <!-- End Wed do -->
 
 
-<!-- What workk DO -->
-<section class="work">
- <h1 class="works-H">
-    Our Work Flow
- </h1>
-<div class="row">
-    <div class="work-col">
-        <!-- <img src="image/web development.jpg"> -->
-        <h3>Idea & Analysis</h3>
-    </div>
-    <div class="work-col">
-        <!-- <img src="image/web development.jpg"> -->
-        <h3>Lunching</h3>
-      
-    </div>
-    <div class="work-col">
-        <!-- <img src="image/web development.jpg"> -->
-        <h3>Development</h3>
-      
-    </div>
-</div>
-</section>
+
 <!-- Reviws -->
 <section class="review">
     <h1>hi</h1>
@@ -133,47 +112,9 @@
 </section>
 
 <!-- End Wed do -->
-
+<script src="/script.js"></script>
  <!-- Java Script For Toggle Menu -->
- <script>
-   var navLinks = document.getElementById("navLinks");
-
-
-    function ShowMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-500px";
-    }
-    const text = document.querySelector('.sub-title');
-    // text animation header
-const textLoad = () =>{
-    setTimeout(()=>{
-        text.textContent = "Web Development";
-    },0);
-    setTimeout(()=>{
-        text.textContent = "App Development";
-    },2000);
-
-    setTimeout(()=>{
-        text.textContent = "Ui/Ux Design";
-    },4000);
-}
-
-textLoad();
-setInterval(textLoad,6000);
-
-window.addEventListener('scroll',function(){
-    var navbar = document.getElementById('navbar');
-    if(window.pageYOffset > 50){
-        navbar.classList.add('scrolled');
-        navbar.classList.remove('transparent');
-    }else{
-        navbar.classList.remove('scrolled');
-        navbar.classList.add('transparent');
-    }
-})
- </script>
+ 
 </body>
 </html>
 
