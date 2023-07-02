@@ -1,0 +1,147 @@
+@media(max-width: 700px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .container-col img{
+    
+        margin-left: px;
+        margin-right: 15px;
+    
+    }
+    nav{
+        display: none;
+
+    }
+
+    nav img{
+        width: 100px;
+       padding-left: 20%;
+    
+    }
+       .text-box h1{
+        font-size: 20px;
+
+    }
+   
+    .nav-links ul li {
+        display: block;
+       color: #fff;
+ 
+  }
+  .nav-links ul li a{
+   color: #fff;
+   display: flex;
+  
+}
+.hero video{
+    width:100%;
+    height: 50vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+.text-box .main-title{
+    font-size: 2.2em;
+    
+}
+.hero-overlay{
+    background:none ;
+}
+.text-box .main-title{
+    font-size: 1.5em;
+    margin-right: 2.5%;
+    line-break: anywhere;
+    font-weight: bold;
+    /* animation: typing-animation 2s steps(30),blink-animation 0.75s step-end; */
+    white-space: nowrap;
+margin: 0 auto;
+overflow: hidden;
+ word-wrap:normal;
+color: #f44336;
+margin-top: 90%;
+
+
+    
+}
+
+.text-box .sub-title{
+    font-size: 59px;
+    margin-right: 2.5%;
+    animation: sub-text-animation 2s steps(30) infinite,blink-animation 0.75s step-end  ;
+    white-space: nowrap;
+margin: 0 auto;
+overflow: hidden;
+color: #f44336;
+}
+.hero-btn {
+    color: red;
+    display: inline-block;
+    text-decoration: none;
+    border:1px solid red;
+    background-color: transparent;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.text-box p{
+    padding-top: 20px;
+    font-size: 0.8em;
+    color: #f44336;
+}
+.hero-btn:hover{
+    color: #fff;
+}
+
+.text-box .sub-title{
+    font-size: 2em;
+    margin-right: 2.5%;
+    animation: sub-text-animation 2s steps(30) infinite,blink-animation 0.75s step-end  ;
+    white-space: nowrap;
+margin: 0 auto;
+overflow: hidden;
+}
+
+    .nav-links{
+        
+        position:absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+       
+        
+    }
+
+
+    .nav-links ul{
+        padding: 35px;
+       
+    }
+ nav .fa{
+ 
+    display: block;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    margin: 12px;
+ }
+/* service */
+.row{
+    flex-direction: column;
+
+}
+
+
+
+
+}
