@@ -332,3 +332,55 @@ reviews{
  margin-top: 15px;
 
 }
+
+
+
+
+
+/* ContactUs */
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px  100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(image/requirement.jpg);
+    background-size: cover;
+
+}
+.content .contact {
+    max-width: 800px;
+   text-align: center;
+}
+
+.content .contact h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.content .contact p{
+   
+    font-weight: 500;
+    color: #fff;
+    
+}
+.containers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.containers .contactInfo{
+    width: 50%;
+} */
