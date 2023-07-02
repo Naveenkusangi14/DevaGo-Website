@@ -5,6 +5,10 @@
     box-sizing: border-box;
    }
 
+   html{
+    scroll-behavior: smooth;
+   }
+
     body{
         overflow-x: hidden;
     }
@@ -22,6 +26,7 @@
 
    .navbar.scrolled{
     background-color: white;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
    }
 
     .navbar{
@@ -179,15 +184,15 @@
 .service-col h3{
     text-align: center;
     color: #f44336f0;;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 
 .service-col p{ 
     padding-top: 10px;
-    text-align: justify;
+    text-align: left;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 
