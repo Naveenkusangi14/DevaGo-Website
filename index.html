@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="large_screen.css" rel="stylesheet"/>
+    <link href="small_screen.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b7b67086a2.js" crossorigin="anonymous"></script>
@@ -13,9 +14,9 @@
 </head>
 <body>
 <section class="header" >
-    <nav>
+    <nav class="navbar" id="navbar">
         <a href="index.html"><img src="image/logos.png"></a>
-        <div class="nav-links" id="navLinks">
+        <div class="nav-links" style="right: -500px;" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li> <a href="#">HOME</a></li>
@@ -33,9 +34,9 @@
         </video>
         <div class="hero-overlay"></div>
         <div class="text-box">
-            <h1 class="main-title">Buliding a Digital Future with Expect</h1>
-            <h1 class="sub-title">Web Development</h1>
-            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Nisi eveniet velit dicta error saepe dignissimos quam consectetur</P>
+            <h1 class="main-title">Join Us for your Business Growth</h1>
+            <!-- <h1 class="sub-title">Web Development</h1> -->
+            <P class="sub-text">Devigo is your catalyst for succes.Join our team to unlock thr potential of your business and achieve remarkable growth through our expert web and app development solutions.</P>
            <a href="#" class="hero-btn">Visit Us To Know More</a>
         </div>
     </div>
@@ -43,27 +44,25 @@
 </section>
 <!-- What we DO -->
 <section class="service">
- <h1 class="services-H">
-    What We Offer
- </h1>
- <p>Unleash your startup's potential with AlphaX! We offer tailored software development solutions, including captivating UI designs, seamless web and app development, and powerful software management. Accelerate your success in the digital landscape. </p>
-<div class="row">
+ 
+ <h1 class="services-H">OUR SERVICES</h1>
+
     <div class="service-col">
         <img src="image/web development.jpg">
-        <h3> Responsive Web Development </h3>
+        <h3>Web Development</h3>
         <p>
-            From dynamic websites to powerful e-commerce platforms, our web development experts are skilled in a wide array of technologies, including WordPress, WiX, ReactJs, Notion, and Django. We'll build a customized web solution that perfectly aligns with your business goals, providing a seamless online experience for your customers.
+            Using the newest technologies, both on the back-end and the front-end side, lets us create scalable, real-time, and efficient solutions that definitely will move your business to the next level!
           </p>
     </div>
     <div class="service-col">
-        <img src="image/web development.jpg">
-        <h3>Cross-platform App Development</h3>
-        <p>In the age of smartphones, having a mobile app is essential for reaching your target audience. AlphaX specializes in app development using Flutter, a cross-platform framework renowned for its performance and versatility. Our developers will create a stunning, feature-rich app that enhances user engagement and drives business growth.</p>
+        <img src="image/app-development.jpg">
+        <h3>Mobile Development</h3>
+        <p>We specialize in bringing our client’s ideas to life. Our brilliant mobile teams take pride in tackling the most difficult challenges and bringing them to life on Android and iOS devices.</p>
     </div>
     <div class="service-col">
-        <img src="image/web development.jpg">
+        <img src="image/uxui.jpg">
         <h3>UI/UX Designing</h3>
-        <p>we understand the power of a well-crafted user interface. Our talented design team specializes in creating visually stunning and intuitive interfaces that captivate users and leave a lasting impression. We'll work closely with you to bring your vision to life and ensure your brand stands out from the competition.t</p>
+        <p>We give a unique part of your business a voice. Design is one of the most important parts of every product. Our design team cares about the user experience over the entire customer journey.</p>
     </div>
 </div>
 </section>
@@ -159,7 +158,7 @@
         navLinks.style.right = "0";
     }
     function hideMenu(){
-        navLinks.style.right = "-200px";
+        navLinks.style.right = "-500px";
     }
     const text = document.querySelector('.sub-title');
     // text animation header
@@ -178,6 +177,17 @@ const textLoad = () =>{
 
 textLoad();
 setInterval(textLoad,6000);
+
+window.addEventListener('scroll',function(){
+    var navbar = document.getElementById('navbar');
+    if(window.pageYOffset > 50){
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('transparent');
+    }else{
+        navbar.classList.remove('scrolled');
+        navbar.classList.add('transparent');
+    }
+})
  </script>
 </body>
 </html>
