@@ -263,6 +263,7 @@
 }
 
 .footer-contact{
+    margin-top: 30px;
     background-color: #f44336;
     padding: 20px;
     
@@ -300,3 +301,35 @@
 }
 
 
+
+.sample-works h1{
+    padding-top: 20%;
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sample-works hr{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+
+
+.project h2{
+    text-align: start;
+    padding-left: 20px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.project p{
+    text-align: start;
+    padding-left: 20px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.project img{
+    width: 100%;
+    padding: 20px;
+}

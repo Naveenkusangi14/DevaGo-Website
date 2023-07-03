@@ -12,13 +12,6 @@
     <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b7b67086a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-    <style>
-        .calendly-frame {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-    </style>
 </head>
 <body>
    <header>
@@ -31,18 +24,35 @@
                 <li class="menu-item"> <a href="/#services" onclick="hideMenu()">SERVICES</a></li>
                 <li class="menu-item"> <a href="/pages/workflow.html">WORK FLOW</a></li>
                 <li class="menu-item"> <a href="#">PRICING</a></li>
-                <li class="menu-item"> <a href="#" onclick="showCalendly()">CONTACT</a></li>
+                <li class="menu-item"> <a href="/pages/contactus.html">CONTACT</a></li>
             </ul>
         </div>
-        
+        <i class="fa fa-bars" style="color: #f44336;"  onclick="ShowMenu()" ></i>
+    </nav>
+   </header>
+   <div class="sample-works">
+    <h1>Our Sample Works</h1>
+    <hr>
+    <div class="project">
+        <img src="https://ik.imagekit.io/y9maptqjf/sample_works/cakehouse.png?updatedAt=1688330246943"/>
+        <h2>Cake House</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus deleniti quae cupiditate. Asperiores velit inventore iste. Eos iure minima, reiciendis, impedit dolorum ratione accusamus consectetur cupiditate voluptas libero delectus!</p>
+    </div>
+    
+
+    <div class="project">
+        <img src="https://ik.imagekit.io/y9maptqjf/sample_works/cara.png?updatedAt=1688329340573"/>
+        <h2>Cara - Online Shopping</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus deleniti quae cupiditate. Asperiores velit inventore iste. Eos iure minima, reiciendis, impedit dolorum ratione accusamus consectetur cupiditate voluptas libero delectus!</p>
+    </div>
+
+    <div class="project">
+        <img src="https://ik.imagekit.io/y9maptqjf/sample_works/pizza.png?updatedAt=1688329684660"/>
+        <h2>Online Pizza Delivary</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus deleniti quae cupiditate. Asperiores velit inventore iste. Eos iure minima, reiciendis, impedit dolorum ratione accusamus consectetur cupiditate voluptas libero delectus!</p>
+    </div>
+
+   </div>
     <script src="/script.js"></script>
-    <script>
-        function showCalendly() {
-            var iframe = document.createElement('iframe');
-            iframe.src = 'https://calendly.com/devigo/30-minute-meeting';
-            iframe.className = 'calendly-frame';
-            document.body.appendChild(iframe);
-        }
-    </script>
 </body>
 </html>
