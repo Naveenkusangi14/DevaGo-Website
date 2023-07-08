@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b7b67086a2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
-    <link rel="script" href="script.js"/>
+    
     <meta name="google-site-verification" content="C8L4ITJ4cFONJID42rpxlKvLKcA9PTVlP-5pHIJhQ6k" />
 </head>
 <body>
@@ -20,13 +20,13 @@
     <nav class="navbar" id="navbar">
         <a href="index.html"><img src="image/logos.png"></a>
         <div class="nav-links" style="right: -500px;" id="navLinks">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <i class="fa fa-times" onclick=ShowMenu()></i>
             <ul>
-                <li class="menu-item"> <a href="/" onclick="hideMenu()" class="active">HOME</a></li>
-                <li class="menu-item"> <a href="#services" onclick="hideMenu()">SERVICES</a></li>
-                <li class="menu-item"> <a href="/pages/workflow.html">WORK FLOW</a></li>
-                <li class="menu-item"> <a href="/pages/sample_works.html">SAMPLE WORKS</a></li>
-                <li class="menu-item"> <a href="/pages/contactus.html">CONTACT</a></li>
+                <li class="menu-item"> <a href="/" onclick=hideMenu() class="active">HOME</a></li>
+                <li class="menu-item"> <a href="/pages/services.html"   onclick="hideMenu()">SERVICES</a></li>
+                <li class="menu-item"> <a href="/pages/workflow.html" onclick=hideMenu()>WORK FLOW</a></li>
+                <li class="menu-item"> <a href="/pages/sample_works.html" onclick=hideMenu()>SAMPLE WORKS</a></li>
+                <li class="menu-item"> <a href="/pages/contactus.html"onclick=hideMenu()>CONTACT US</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" style="color: red;"  onclick="ShowMenu()" ></i>
@@ -98,9 +98,7 @@
     </div>
 </footer>
 
-<!-- End Wed do -->
 <script src="/script.js"></script>
- <!-- Java Script For Toggle Menu -->
  
 </body>
 </html>

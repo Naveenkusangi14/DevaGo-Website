@@ -70,21 +70,21 @@
     .nav-links ul li {
         display: block;
        color: #fff;
- 
+       
   }
   .nav-links ul li a{
    color: #fff;
    display: flex;
    margin-top: 50px;
    text-decoration: none;
-   font-size: 2em;
+   font-size: 1.5em;
   
 }
 
 .nav-links a.active{
     padding-bottom: 10px;
     border-bottom: 2px  solid white;
-    margin-right: 40%;
+    margin-right: 10%;
 }
 
 
@@ -222,6 +222,7 @@
 }
 
 .works-H{
+    font-family: 'Poiret One', cursive;
     font-size: 2em;
     text-align: center;
     padding-top: 20%;
@@ -305,11 +306,11 @@
 .sample-works h1{
     padding-top: 20%;
     text-align: center;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Poiret One', cursive;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.sample-works hr{
+ .hr{
     width: 90%;
     margin-left: 5%;
     margin-top: 10px;
@@ -332,4 +333,11 @@
 .project img{
     width: 100%;
     padding: 20px;
+}
+
+.and-more{
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Thasadith', sans-serif;
+    color: #f44336;
 }
